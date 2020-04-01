@@ -34,9 +34,10 @@ export default function getGraphData(rawData) {
   console.log(color);
   //options and options for dataset
   graphLines.forEach((set, index) => {
-    console.log(colors[index]);
+    console.log(color(colors[index]).alpha(.5).rgbString());
     const dataset = {
       label: set,
+      backgroundColor: color(colors[index]).alpha(.5).rgbString(),
       borderColor: colors[index],
       data: Object.values(rawData[set])
     };
