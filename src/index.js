@@ -1,2 +1,2 @@
-import ui from "./ui/index";
-ui()
+import table from "./ui/table";
+import firstChart from "./ui/graph"
