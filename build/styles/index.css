@@ -53,3 +53,28 @@ a:active {
   margin: 0 auto;
   float: none;
 }
+
+.header-search {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.records {
+  text-align: center;
+}
+
+.record-box-blue {
+  width: 20px;
+  height: 20px;
+  background-color: turquoise;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .header-search {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
