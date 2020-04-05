@@ -29,6 +29,7 @@ async function all() {
     <td>${country.cases}</td>
     <td>${country.deaths}</td>
     <td>${country.recovered}</td>
+    <td>${Number((country.recovered/country.cases)*100).toFixed(2)}% / ${Number((country.deaths/country.cases)*100).toFixed(2)}% </td>
     `;
       tr.innerHTML = tds;
       table.append(tr);
