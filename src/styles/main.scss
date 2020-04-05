@@ -94,5 +94,11 @@ tr{
   .lead{
     font-size: 1rem;
   }
+  .card > .card-body{
+    h5{
+      font-size: 1.5em;
+    }
+    font-size: .7em;
+  }
 }
 
