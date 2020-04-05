@@ -69,7 +69,6 @@ export function getCountryGraphData(rawData) {
   const thelabels = Object.keys(rawData.timeline.cases);
   cookedData.labels = [...thelabels];
   
-  console.log(rawData.timeline);
   const graphLines = Object.keys(rawData.timeline);
 
   //chart color helpers
