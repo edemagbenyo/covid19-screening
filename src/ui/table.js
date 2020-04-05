@@ -1,12 +1,13 @@
 import api from "../api/index"
 import $ from 'jquery';
+import { numberFormat } from "../helpers";
 
 const table = document.querySelector('table.countries>tbody')
 const titleCountryName = document.querySelector('.country-name')
-const pActive = document.querySelector('p.active')
-const pDeath = document.querySelector('p.death')
-const pRecovered = document.querySelector('p.recovered')
-const pTotalCases = document.querySelector('p.total-cases')
+const pActive = document.querySelector('.active')
+const pDeath = document.querySelector('.death')
+const pRecovered = document.querySelector('.recovered')
+const pTotalCases = document.querySelector('.total-cases')
 const countryDiv = document.querySelector('.country')
 async function all(){
   const all = await api.getAll(); 
@@ -24,20 +25,22 @@ async function all(){
     tr.innerHTML = tds
     table.append(tr)
     tr.addEventListener('click',async (e)=>{
+      // TODO show modal first and add a spinning image 
       const countryname = e.target.dataset['country']
       if(!countryname) return;
       const country = await api.getCountry(countryname);
       console.log(country);
+      //flag image
       const img = document.createElement('img');
       img.style.width='50px'
       img.src=country.countryInfo.flag
       titleCountryName.innerText = country.country
       titleCountryName.append(img)
       
-      pActive.innerText = country.active
-      pDeath.innerText = country.deaths
-      pRecovered.innerText = country.recovered
-      pTotalCases.innerText = country.cases
+      pActive.innerText = numberFormat(country.active)
+      pDeath.innerText = numberFormat(country.deaths)
+      pRecovered.innerText = numberFormat(country.recovered)
+      pTotalCases.innerText = numberFormat(country.cases)
       $('.countryDetailsModal').modal({
         show:true
       })

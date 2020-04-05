@@ -23,7 +23,8 @@
     <div class="input-group mb-3 header-search mt-4">
       <input type="text" class="form-control input" placeholder="search a country">
       <div class="input-group-append">
-        <button class="btn btn-outline-secondary type=" data-toggle="modal" data-target=".bd-example-modal-lg">search</button>
+        <button class="btn btn-outline-secondary type=" data-toggle="modal"
+          data-target=".bd-example-modal-lg">search</button>
       </div>
     </div>
   </header>
@@ -41,7 +42,7 @@
         </tr>
       </thead>
       <tbody>
-        
+
       </tbody>
     </table>
   </div>
@@ -60,46 +61,58 @@
             </div>
           </div>
           <div class="row records mt-4">
-            <div class="col-md-6 col-sm-6">
-              <div class="card border-primary mb-3" style="max-width: 18rem;">
-                <div class="row">
-                  <div class="col-sm-12">Recovered</div>
+            <div class="col-md-6 col-sm-6 col-12">
+              <canvas id="country"></canvas>
+            </div>
+            <div class="col-md-6 col-sm-6 col-12">
+              <div class="row">
+                <div class="col-6 col-md-6">
+                  <div class="card bg-primary text-white mb-3" style="max-width: 18rem;">
+                    <div class="row">
+                      <div class="col-sm-12">Active</div>
+                    </div>
+                    <div class="card-body text-white">
+                      <h3 class="card-text active"></h3>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-body text-primary">
-                  <p class="card-text recovered"></p>
+                <div class="col-6 col-md-6">
+                  <div class="card bg-danger text-white mb-3" style="max-width: 18rem;">
+                    <div class="row">
+                      <div class="col-sm-12">Total cases</div>
+                    </div>
+                    <div class="card-body text-white">
+                      <h3 class="card-text total-cases">4920</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="card border-primary mb-3" style="max-width: 18rem;">
-                <div class="row">
-                  <div class="col-sm-12">Death</div>
+              <div class="row">
+                <div class="col-6 col-md-6">
+                  <div class="card bg-success text-white mb-3" style="max-width: 18rem;">
+                    <div class="row">
+                      <div class="col-sm-12">Recovered</div>
+                    </div>
+                    <div class="card-body text-white">
+                      <h3 class="card-text recovered"></h3>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-body text-primary">
-                  <p class="card-text death"></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="card border-primary mb-3" style="max-width: 18rem;">
-                <div class="row">
-                  <div class="col-sm-12">Active</div>
-                </div>
-                <div class="card-body text-primary">
-                  <p class="card-text active"></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="card border-primary mb-3" style="max-width: 18rem;">
-                <div class="row">
-                  <div class="col-sm-12">Total cases</div>
-                </div>
-                <div class="card-body text-primary">
-                  <p class="card-text total-cases">4920</p>
+                <div class="col-6 col-md-6">
+                  <div class="card bg-dark text-white mb-3" style="max-width: 18rem;">
+                    <div class="row">
+                      <div class="col-sm-12">Death</div>
+                    </div>
+                    <div class="card-body text-white">
+                      <h3 class="card-text death"></h3>
+                    </div>
+                  </div>
                 </div>
               </div>
+              
             </div>
+
+
           </div>
 
         </div>
