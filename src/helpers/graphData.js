@@ -51,10 +51,11 @@ export function getCountryGraphData(rawData) {
       .add(days, "d")
       .format(timeFormat);
   }
+  console.log(rawData);
   let colors = [
-    "rgb(75, 192, 192)",
-    "rgb(255, 99, 132)",
-    "rgb(54, 162, 235)",
+    "rgb(0, 123, 255)",
+    "rgb(52, 58, 64)",
+    "rgb(40, 167, 69)",
     "rgb(153, 102, 255)",
     "rgb(201, 203, 207)"
   ];

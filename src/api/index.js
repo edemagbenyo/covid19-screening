@@ -10,7 +10,6 @@ const api = (function api(){
   }
   async function getCountry(countryName="Ghana"){
     let country = countryName;
-    console.log("country",country);
     //TODO Do any check before searching
     // TODO we make user choose from a dropdown this is to assure we 
     try {

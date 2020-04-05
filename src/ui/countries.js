@@ -40,6 +40,8 @@ async function all() {
         if (!countryname) return;
         const country = await api.getCountry(countryname);
         //flag image
+
+        console.log(country);
         const img = document.createElement("img");
         img.style.width = "50px";
         img.src = country.countryInfo.flag;
@@ -60,7 +62,6 @@ async function all() {
         //transform the data for graphjs to understand
         let graphData = getCountryGraphData(history);
         
-        console.log("chart instance",chart);
         if(chart){
             addData(chart,country.country,graphData.datasets)
         }else{
@@ -70,17 +71,11 @@ async function all() {
             options: {},
           });
         }
-
-        //set the graphData to empty {}
-        $('.countryDetailsModal').on('hidden.bs.modal', function (e) {
-        })
       });
     });
 }
 
 function addData(chart, label, data) {
-
-  console.log(data);
   chart.data.datasets=data
   chart.update();
 }
