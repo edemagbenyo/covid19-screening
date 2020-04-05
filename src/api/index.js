@@ -24,7 +24,7 @@ const api = (function api(){
     try {
       if(all){
         return await track.histroical(true)
-      }else if(countr){
+      }else if(country){
         return await track.histroical(null,country)
       }
     } catch (error) {

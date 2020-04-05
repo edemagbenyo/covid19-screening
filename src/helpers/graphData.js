@@ -1,7 +1,7 @@
 import moment from "moment";
 import Chart from "chart.js";
 
-export default function getGraphData(rawData) {
+export function getGraphData(rawData) {
   var timeFormat = "MM/DD/YYYY HH:mm";
   function newDate(days) {
     return moment()
@@ -22,7 +22,6 @@ export default function getGraphData(rawData) {
     datasets: []
   };
 
-  console.log(rawData);
   //set labels for the data
   const thelabels = Object.keys(rawData.cases);
   cookedData.labels = [...thelabels];
@@ -31,10 +30,8 @@ export default function getGraphData(rawData) {
 
   //chart color helpers
   const color = Chart.helpers.color;
-  console.log(color);
   //options and options for dataset
   graphLines.forEach((set, index) => {
-    console.log(color(colors[index]).alpha(.5).rgbString());
     const dataset = {
       label: set,
       backgroundColor: color(colors[index]).alpha(.5).rgbString(),
@@ -44,10 +41,51 @@ export default function getGraphData(rawData) {
 
     cookedData.datasets.push(dataset);
   });
+  return cookedData;
+}
 
-  // rawData.forEach(country=>{
-  //   console.log(country);
-  // });
-  console.log(cookedData);
+export function getCountryGraphData(rawData) {
+  var timeFormat = "MM/DD/YYYY HH:mm";
+  function newDate(days) {
+    return moment()
+      .add(days, "d")
+      .format(timeFormat);
+  }
+  let colors = [
+    "rgb(75, 192, 192)",
+    "rgb(255, 99, 132)",
+    "rgb(54, 162, 235)",
+    "rgb(153, 102, 255)",
+    "rgb(201, 203, 207)"
+  ];
+
+  //final data to return
+  let cookedData = {
+    labels: [],
+    datasets: []
+  };
+
+  //set labels for the data
+  const thelabels = Object.keys(rawData.timeline.cases);
+  cookedData.labels = [...thelabels];
+  
+  console.log(rawData.timeline);
+  const graphLines = Object.keys(rawData.timeline);
+
+  //chart color helpers
+  const color = Chart.helpers.color;
+  //options and options for dataset
+  graphLines.forEach((set, index) => {
+    const dataset = {
+      label: set,
+      backgroundColor: color(colors[index]).alpha(.5).rgbString(),
+      borderColor: colors[index],
+      data: Object.values(rawData.timeline[set])
+    };
+
+    cookedData.datasets.push(dataset);
+  });
+
+
   return cookedData;
 }
