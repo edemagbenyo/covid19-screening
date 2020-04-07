@@ -1,2 +1,5 @@
-import table from "./ui/table";
-import firstChart from "./ui/graph"
+import 'bootstrap';
+
+import './styles/main.scss'
+import "./ui/countries";
+import "./ui/graph"
