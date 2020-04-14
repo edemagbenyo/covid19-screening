@@ -40,6 +40,15 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "babel-loader"
+          }
+        ]
+      }
     ],
   },
   devServer: {
@@ -51,6 +60,6 @@ module.exports = {
         from: path.resolve(__dirname, "*.html"),
         to: path.resolve(__dirname, "build"),
       },
-    ]),
+    ])
   ],
 };
