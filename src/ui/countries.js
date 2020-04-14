@@ -11,6 +11,7 @@ const pTotalCases = document.querySelector(".total-cases");
 const countryDiv = document.querySelector(".country");
 var ctx = document.getElementById('country');
 
+
 async function all() {
   const all = await api.getAll();
 

@@ -5,6 +5,9 @@ const track = new NovelCovid();
 
 const api = (function api(){
   
+  async function all(){
+    return await track.all()
+  }
   async function getAll(){
     return await track.countries();
   }
@@ -33,7 +36,8 @@ const api = (function api(){
   return {
     getAll,
     getCountry,
-    historical
+    historical,
+    all
   }
 })()
 
