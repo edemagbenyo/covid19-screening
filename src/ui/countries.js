@@ -9,6 +9,7 @@ const pDeath = document.querySelector(".death");
 const pRecovered = document.querySelector(".recovered");
 const pTotalCases = document.querySelector(".total-cases");
 const countryDiv = document.querySelector(".country");
+const searchInput = document.querySelector(".search-input");
 var ctx = document.getElementById('country');
 
 
@@ -76,10 +77,28 @@ async function all() {
       });
     });
 }
-
+all();
 function addData(chart, label, data) {
   chart.data.datasets=data
   chart.update();
 }
+// searchInput.addEventListener('input',async (e)=>{
+  // const search = e.target.value
 
-all();
+  // //Clear the table
+  // const tr = document.createElement('tr')
+  // //search for countries that start with the input
+  // const countries = await api.getCountry(search)
+  // if(Object.keys('message')){
+  //   const td = document.createElement('td')
+  //   td.textContent=`No country with the name ${search}`
+  //   tr.append(td)
+  //   table.innerHTML=`<tr><td>cghgfh</td></tr>`
+  // }else{
+
+  // }
+  //Append countries found from search
+// })
+
+
+
