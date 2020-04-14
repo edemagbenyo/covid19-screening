@@ -105,5 +105,19 @@ tr{
     }
     font-size: .7em;
   }
+  .jumbotron{
+    padding:1rem;
+    margin-bottom: .5rem;
+  }
+  .alert{
+    padding: .5rem;
+  }
+
+  .numbers{
+    & > *{
+      margin: .5rem 5px;
+      font-size: .8rem;
+    }
+  }
 }
 
