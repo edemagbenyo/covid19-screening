@@ -8,7 +8,10 @@
 
 Covid19-screening is simple application for tracking the novel corona virus pandemy cases. 
 It is no longer a news that we have been hit by a dangerous flu-like disease. This platform provides
-an up-to-date information on the cases count per country, a global cases data and some preventive measures.
+an up-to-date information on the cases count per country, a global case data and some preventive measures.
+
+## Live
+Covid19-screening is live [here](https://covid19out-92937.firebaseapp.com/)
 
 ## Prerequisites
 
