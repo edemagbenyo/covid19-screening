@@ -88,7 +88,7 @@ tr{
 }
 
 .countries-table{
-  max-height:450px;
+  max-height:540px;
   overflow-y: auto;
 }
 ul.symptoms{
@@ -126,5 +126,13 @@ ul.symptoms{
       font-size: .8rem;
     }
   }
+  // .countries-table{
+  //   &>*{
+  //     font-size:.5em;
+  //   }
+  // }
 }
+
+//TableData
+
 

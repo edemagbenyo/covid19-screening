@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Countries</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
 </head>
 
-<bodyy>
+<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
@@ -20,20 +22,20 @@
         <a href="#" class="nav-link">Countries</a>
       </div>
     </nav>
-    <div class="input-group mb-3 header-search mt-4">
-      <input type="text" class="form-control input" placeholder="search a country">
+    <!-- <div class="input-group mb-3 header-search mt-4">
+      <input type="text" class="form-control input search-input" placeholder="search a country">
       <div class="input-group-append">
         <button class="btn btn-outline-secondary type=" data-toggle="modal"
           data-target=".bd-example-modal-lg">search</button>
       </div>
-    </div>
+    </div> -->
   </header>
 
   <div class="container mt-4">
-    <div class="alert alert-info"> Click on any country to show details. Table is scrollable.</div>
+    <div class="alert alert-info"> Click on any country to show details.</div>
     <div class="table-responsive-sm countries-table">
 
-      <table class="table table-dark countries">
+      <table class="table countries">
         <thead>
           <tr>
             <th scope="col">#</th>

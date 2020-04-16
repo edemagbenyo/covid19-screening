@@ -1,7 +1,8 @@
 import api from "../api/index";
 import $ from "jquery";
 import { numberFormat, getCountryGraphData } from "../helpers";
-
+import dt from 'datatables.net';
+import 'datatables.net-dt';
 const table = document.querySelector("table.countries>tbody");
 const titleCountryName = document.querySelector(".country-name");
 const pActive = document.querySelector(".active");
@@ -9,6 +10,7 @@ const pDeath = document.querySelector(".death");
 const pRecovered = document.querySelector(".recovered");
 const pTotalCases = document.querySelector(".total-cases");
 const countryDiv = document.querySelector(".country");
+const searchInput = document.querySelector(".search-input");
 var ctx = document.getElementById('country');
 
 
@@ -75,11 +77,15 @@ async function all() {
         }
       });
     });
-}
 
+    $('.countries').DataTable();
+}
+all();
 function addData(chart, label, data) {
   chart.data.datasets=data
   chart.update();
 }
 
-all();
+
+
+
