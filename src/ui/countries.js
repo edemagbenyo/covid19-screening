@@ -1,7 +1,8 @@
 import api from "../api/index";
 import $ from "jquery";
 import { numberFormat, getCountryGraphData } from "../helpers";
-
+import dt from 'datatables.net';
+import 'datatables.net-dt';
 const table = document.querySelector("table.countries>tbody");
 const titleCountryName = document.querySelector(".country-name");
 const pActive = document.querySelector(".active");
@@ -76,29 +77,15 @@ async function all() {
         }
       });
     });
+
+    $('.countries').DataTable();
 }
 all();
 function addData(chart, label, data) {
   chart.data.datasets=data
   chart.update();
 }
-// searchInput.addEventListener('input',async (e)=>{
-  // const search = e.target.value
 
-  // //Clear the table
-  // const tr = document.createElement('tr')
-  // //search for countries that start with the input
-  // const countries = await api.getCountry(search)
-  // if(Object.keys('message')){
-  //   const td = document.createElement('td')
-  //   td.textContent=`No country with the name ${search}`
-  //   tr.append(td)
-  //   table.innerHTML=`<tr><td>cghgfh</td></tr>`
-  // }else{
-
-  // }
-  //Append countries found from search
-// })
 
 
 
