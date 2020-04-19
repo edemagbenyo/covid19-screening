@@ -15,7 +15,6 @@ jobs:
     - uses: actions/setup-node@master
       with:
         node-version: '10.x'
-    - name: Run node and build app
     - run: npm install
     - run: npm run build
     - uses: w9jds/firebase-action@master
