@@ -1,12 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Covid 19 </title>
 </head>
+
 <body>
-  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">Covid(19)Out</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+          </li>
+        </ul>
+        <a href="countries.html" class="nav-link">Countries</a>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <h3 class="display-5 mt-4 main-title">Let us fight this virus together</h3>
+      <p class="lead">Precise global information about corona virus.</p>
+      <div id="numbers" class="numbers row">
+        <div class="alert alert-success col cases">Confirmed <span class="badge badge-success">100,000</span> </div>
+        <div class="alert alert-danger col deaths">Deaths <span class="badge badge-danger">100,000</span> </div>
+        <div class="alert alert-info col recovered">Recovered <span class="badge badge-info">100,000</span> </div>
+      </div>
+      <canvas id="global"></canvas>
+    </div>
+
+  </header>
+  <div class="container">
+    <div class="row card-container">
+      <div class="col-sm-12 col-md-6 col-6">
+        <a href="countries.html">
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+              <div style="width: 50px; height: 50;">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999"
+                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <g>
+                    <path style="fill:#03AA6F;" d="M441.374,79.519l-26.485,17.656l-44.141-8.828l-26.485-8.828l-35.313,8.828l-26.485-8.828
+      l17.656-35.313h35.313l34.607-17.303C396.73,40.101,420.875,57.916,441.374,79.519z" />
+                    <path style="fill:#03AA6F;" d="M238.325,44.206l-8.828,26.485l-26.485,8.828l-26.485,44.141l-44.141,26.485l-61.797,8.828v26.485
+      l17.656,17.656v35.313L61.762,220.77l-26.485-17.656l-15.361-46.171C46.356,93.935,96.898,44.126,160.284,18.604l25.072,16.774
+      L238.325,44.206z" />
+                    <polygon style="fill:#03AA6F;" points="255.982,291.395 247.154,335.536 211.841,370.849 211.841,397.334 176.528,423.818 
+      176.528,467.959 150.044,459.131 132.387,414.99 132.387,326.708 88.246,317.88 70.59,282.567 70.59,256.082 88.246,238.426 
+      114.731,211.941 132.387,247.254 194.184,247.254 220.669,291.395 	" />
+                    <path style="fill:#03AA6F;" d="M479.335,130.987c48.193,85.978,42.702,191.996-14.125,272.526l-23.836-23.836v-35.313
+      l-17.656-35.313l-17.656-35.313v-35.313l-26.485-17.656l-35.313,8.828l-61.797-26.485l-8.828-61.797l26.485-26.485h52.969
+      l17.656,26.485l52.969,8.828l52.969-17.656L479.335,130.987z" />
+                  </g>
+                  <path style="fill:#86DAF1;" d="M308.951,88.347l35.313-8.828l26.485,8.828l44.141,8.828l26.485-17.656
+    c14.787,15.476,27.544,32.77,37.961,51.468l-2.648,1.501l-52.969,17.656l-52.969-8.828l-17.656-26.485h-52.969l-26.485,26.485
+    l8.828,61.797l61.797,26.485l35.313-8.828l26.485,17.656v35.313l17.656,35.313l17.656,35.313v35.313l23.836,23.836
+    c-81.528,115.526-241.275,143.079-356.792,61.55C10.311,395.815-26.494,267.691,19.916,156.942l15.361,46.171l26.485,17.656
+    l26.485,17.656L70.59,256.082v26.485l17.656,35.313l44.141,8.828v88.282l17.656,44.141l26.485,8.828v-44.141l35.313-26.485v-26.485
+    l35.313-35.313l8.828-44.141h-35.313l-26.485-44.141h-61.797l-17.656-35.313l-26.485,26.485v-35.313L70.59,185.457v-26.485
+    l61.797-8.828l44.141-26.485l26.485-44.141l26.485-8.828l8.828-26.485l-52.969-8.828l-25.072-16.774
+    c67.889-27.341,144.235-24.322,209.758,8.299l-34.607,17.303h-35.313l-17.656,35.313L308.951,88.347z" />
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                </svg>
+              </div>
+              <h5 class="card-title mt-4">Countries</h5>
+              <p class="card-text">Countries infected with covid-19.</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-6">
+        <a href="#" data-toggle="modal" data-target="#SymptomsModal">
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+              <div>
+                <svg id="Capa_1" enable-background="new 0 0 497 497" height="50" viewBox="0 0 497 497" width="50"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="m111.814 356.902-103.027 131.311c11.716 11.716 30.711 11.716 42.426 0l95.955-95.955z"
+                      fill="#414851" />
+                    <path
+                      d="m104.742 349.831-95.955 95.956c-11.716 11.716-11.716 30.711 0 42.426 0 0 117.169-117.169 117.169-117.169z"
+                      fill="#62676f" />
+                    <path d="m111.564 313.801h98.269v45h-98.269z" fill="#9bfef7"
+                      transform="matrix(.707 -.707 .707 .707 -190.733 212.132)" />
+                    <path
+                      d="m157.775 381.651-21.213-21.213-21.213 21.213 21.213 21.213c5.834 5.834 15.38 5.834 21.213 0 5.834-5.833 5.834-15.379 0-21.213z"
+                      fill="#4ad6cf" />
+                    <path
+                      d="m136.562 381.651c5.834-5.834 5.834-15.38 0-21.213l-21.213-21.213c-5.834-5.834-15.38-5.834-21.213 0-5.834 5.834-5.834 15.38 0 21.213l21.213 21.213c5.834 5.834 15.38 5.834 21.213 0z"
+                      fill="#4ef5e9" />
+                    <circle cx="304.5" cy="192.5" fill="#4ad6cf" r="192.5" />
+                    <circle cx="304.5" cy="192.5" fill="#fff" r="162.5" />
+                    <path
+                      d="m314.57 60h-20.14c-8.936 0-16.18 7.244-16.18 16.18 0 2.512.585 4.99 1.708 7.236l9.542 19.084h30l9.542-19.083c1.123-2.247 1.708-4.724 1.708-7.236 0-8.937-7.244-16.181-16.18-16.181z"
+                      fill="#fe7665" />
+                    <path d="m289.5 102.5v39.194h30v-39.194c0-8.284-6.716-15-15-15s-15 6.716-15 15z" fill="#ff4547" />
+                    <circle cx="304.5" cy="192.5" fill="#ff4547" r="67.5" />
+                    <path d="m304.5 155v75c20.711 0 37.5-16.789 37.5-37.5s-16.789-37.5-37.5-37.5z" fill="#ffa785" />
+                    <path
+                      d="m312 192.5c0-20.711-3.358-37.5-7.5-37.5-20.711 0-37.5 16.789-37.5 37.5s16.789 37.5 37.5 37.5c4.142 0 7.5-16.789 7.5-37.5z"
+                      fill="#ffbea4" />
+                    <path
+                      d="m194.786 117.529-10.07 17.441c-4.468 7.739-1.817 17.635 5.922 22.103 2.176 1.256 4.613 1.988 7.121 2.139l21.298 1.278 15-25.981-11.756-17.805c-1.384-2.096-3.237-3.841-5.413-5.097-7.738-4.468-17.633-1.816-22.102 5.922z"
+                      fill="#fe7665" />
+                    <path
+                      d="m219.058 160.49 33.942 19.597 15-25.981-33.943-19.597c-7.174-4.142-16.348-1.684-20.49 5.491s-1.684 16.348 5.491 20.49z"
+                      fill="#ff4547" />
+                    <path
+                      d="m184.717 250.029 10.07 17.441c4.468 7.739 14.364 10.39 22.103 5.922 2.176-1.256 4.029-3.001 5.413-5.098l11.756-17.805-15-25.981-21.297 1.278c-2.507.151-4.945.883-7.121 2.139-7.741 4.47-10.392 14.366-5.924 22.104z"
+                      fill="#fe7665" />
+                    <path
+                      d="m234.058 250.49 33.942-19.596-15-25.981-33.943 19.597c-7.174 4.142-9.633 13.316-5.49 20.491 4.143 7.173 13.316 9.631 20.491 5.489z"
+                      fill="#ff4547" />
+                    <path
+                      d="m294.43 325h20.139c8.936 0 16.18-7.244 16.18-16.18 0-2.512-.585-4.99-1.708-7.236l-9.541-19.084h-30l-9.542 19.083c-1.123 2.247-1.708 4.724-1.708 7.236 0 8.937 7.244 16.181 16.18 16.181z"
+                      fill="#fe7665" />
+                    <path d="m319.5 282.5v-39.194h-30v39.194c0 8.284 6.716 15 15 15s15-6.716 15-15z" fill="#ff4547" />
+                    <path
+                      d="m414.214 267.471 10.07-17.441c4.468-7.739 1.817-17.635-5.922-22.103-2.176-1.256-4.613-1.988-7.121-2.139l-21.298-1.278-15 25.981 11.756 17.805c1.384 2.096 3.237 3.841 5.413 5.097 7.738 4.468 17.634 1.816 22.102-5.922z"
+                      fill="#fe7665" />
+                    <path
+                      d="m389.942 224.51-33.942-19.597-15 25.981 33.943 19.597c7.174 4.142 16.348 1.684 20.49-5.491s1.684-16.348-5.491-20.49z"
+                      fill="#ff4547" />
+                    <path
+                      d="m424.283 134.971-10.07-17.441c-4.468-7.739-14.364-10.39-22.103-5.922-2.176 1.256-4.029 3.001-5.413 5.098l-11.756 17.805 15 25.981 21.297-1.278c2.507-.151 4.945-.883 7.121-2.139 7.741-4.47 10.392-14.366 5.924-22.104z"
+                      fill="#fe7665" />
+                    <path
+                      d="m374.942 134.51-33.942 19.596 15 25.981 33.943-19.597c7.174-4.142 9.633-13.316 5.49-20.491-4.143-7.173-13.316-9.631-20.491-5.489z"
+                      fill="#ff4547" />
+                  </g>
+                </svg>
+              </div>
+              <h5 class="card-title mt-4">Symptoms</h5>
+              <p class="card-text">Signs, identify the risks of infection.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-6">
+        <a href="#" data-toggle="modal" data-target="#exampleModalLong">
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+              <div>
+                <svg id="Capa_1" enable-background="new 0 0 497 497" height="50" viewBox="0 0 497 497" width="50"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="m463.238 56.902c-133.093-75.869-296.383-75.869-429.476 0-2.333 1.33-3.762 3.825-3.762 6.51v95.05c0 149.377 88.198 278.896 215.356 337.845 1.99.923 4.297.923 6.288 0 127.158-58.949 215.356-188.467 215.356-337.844v-95.05c0-2.686-1.429-5.181-3.762-6.511z"
+                      fill="#dbfffc" />
+                    <path
+                      d="m392 72.479-143.5 374.418c48.415-25.688 89.615-63.149 119.979-109.281 35.013-53.199 53.521-115.149 53.521-179.153v-72.583c-9.819-4.896-19.83-9.363-30-13.401z"
+                      fill="#4ad6cf" />
+                    <path
+                      d="m347.733 337.616c28.959-53.199 44.267-115.149 44.267-179.153v-85.984c-45.514-18.073-94.245-27.479-143.5-27.479-60.262 0-119.741 14.072-173.5 40.88v72.583c0 64.004 18.507 125.954 53.522 179.153 30.363 46.132 71.563 83.592 119.978 109.281 40.044-25.689 74.12-63.149 99.233-109.281z"
+                      fill="#4ef5e9" />
+                    <path
+                      d="m258.57 78h-20.14c-8.936 0-16.18 7.244-16.18 16.18 0 2.512.585 4.99 1.708 7.236l9.542 19.084h30l9.542-19.083c1.123-2.247 1.708-4.724 1.708-7.236 0-8.937-7.244-16.181-16.18-16.181z"
+                      fill="#fe7665" />
+                    <path d="m233.5 120.5v39.194h30v-39.194c0-8.284-6.716-15-15-15s-15 6.716-15 15z" fill="#ff4547" />
+                    <circle cx="248.5" cy="210.5" fill="#ff4547" r="67.5" />
+                    <path d="m248.5 173v75c20.711 0 37.5-16.789 37.5-37.5s-16.789-37.5-37.5-37.5z" fill="#ffa785" />
+                    <path
+                      d="m256 210.5c0-20.711-3.358-37.5-7.5-37.5-20.711 0-37.5 16.789-37.5 37.5s16.789 37.5 37.5 37.5c4.142 0 7.5-16.789 7.5-37.5z"
+                      fill="#ffbea4" />
+                    <path
+                      d="m138.786 135.529-10.07 17.441c-4.468 7.739-1.817 17.635 5.922 22.103 2.176 1.256 4.613 1.988 7.121 2.139l21.298 1.278 15-25.981-11.756-17.805c-1.384-2.096-3.237-3.841-5.413-5.097-7.738-4.468-17.634-1.816-22.102 5.922z"
+                      fill="#fe7665" />
+                    <path
+                      d="m163.058 178.49 33.942 19.597 15-25.981-33.943-19.597c-7.174-4.142-16.348-1.684-20.49 5.491s-1.684 16.348 5.491 20.49z"
+                      fill="#ff4547" />
+                    <path
+                      d="m128.717 268.029 10.07 17.441c4.468 7.739 14.364 10.39 22.103 5.922 2.176-1.256 4.029-3.001 5.413-5.098l11.756-17.805-15-25.981-21.297 1.278c-2.507.151-4.945.883-7.121 2.139-7.741 4.47-10.392 14.366-5.924 22.104z"
+                      fill="#fe7665" />
+                    <path
+                      d="m178.058 268.49 33.942-19.596-15-25.981-33.943 19.597c-7.174 4.142-9.633 13.316-5.49 20.491 4.143 7.173 13.316 9.631 20.491 5.489z"
+                      fill="#ff4547" />
+                    <path
+                      d="m238.43 343h20.139c8.936 0 16.18-7.244 16.18-16.18 0-2.512-.585-4.99-1.708-7.236l-9.541-19.084h-30l-9.542 19.083c-1.123 2.247-1.708 4.724-1.708 7.236 0 8.937 7.244 16.181 16.18 16.181z"
+                      fill="#fe7665" />
+                    <path d="m263.5 300.5v-39.194h-30v39.194c0 8.284 6.716 15 15 15s15-6.716 15-15z" fill="#ff4547" />
+                    <path
+                      d="m358.214 285.471 10.07-17.441c4.468-7.739 1.817-17.635-5.922-22.103-2.176-1.256-4.613-1.988-7.121-2.139l-21.298-1.278-15 25.981 11.756 17.805c1.384 2.096 3.237 3.841 5.413 5.097 7.738 4.468 17.633 1.816 22.102-5.922z"
+                      fill="#fe7665" />
+                    <path
+                      d="m333.942 242.51-33.942-19.597-15 25.981 33.943 19.597c7.174 4.142 16.348 1.684 20.49-5.491s1.684-16.348-5.491-20.49z"
+                      fill="#ff4547" />
+                    <path
+                      d="m368.283 152.971-10.07-17.441c-4.468-7.739-14.364-10.39-22.103-5.922-2.176 1.256-4.029 3.001-5.413 5.098l-11.756 17.805 15 25.981 21.297-1.278c2.508-.151 4.945-.883 7.121-2.139 7.741-4.47 10.392-14.366 5.924-22.104z"
+                      fill="#fe7665" />
+                    <path
+                      d="m318.942 152.51-33.942 19.596 15 25.981 33.943-19.597c7.174-4.142 9.633-13.316 5.49-20.491-4.143-7.173-13.316-9.631-20.491-5.489z"
+                      fill="#ff4547" />
+                  </g>
+                </svg>
+              </div>
+              <h5 class="card-title mt-4">Prevention</h5>
+              <p class="card-text">Help you avoid the risks of infection.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-6">
+        <a href="#">
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+              <div>
+                <svg id="Capa_1" enable-background="new 0 0 497 497" height="50" viewBox="0 0 497 497" width="50"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="m422 18.5h-30l-143.5 385 173.5-60c16.5 0 30-13.5 30-30v-265c0-16.5-13.5-30-30-30z"
+                      fill="#4ef5e9" />
+                    <path
+                      d="m422 48.5c0-16.5-13.5-30-30-30h-317c-16.5 0-30 13.5-30 30v265c0 16.5 13.5 30 30 30l173.5 60 143.5-60c16.5 0 30-13.5 30-30z"
+                      fill="#9bfef7" />
+                    <path d="m434.44 403.5v75h32.56c16.569 0 30-13.431 30-30z" fill="#414851" />
+                    <path
+                      d="m78.576 418.5-78.576 30c0 16.569 13.431 30 30 30h173.5l45-47.879 45 47.879h140.94c16.569 0 30-13.431 30-30v-30z"
+                      fill="#62676f" />
+                    <path d="m203.5 418.5h90v60h-90z" fill="#4ef5e9" />
+                    <path d="m459.79 361.68c-4.72-11.03-15.57-18.18-27.57-18.18h-32.56l64.78 105h32.56z"
+                      fill="#83878c" />
+                    <path
+                      d="m427.23 361.68 4.988 11.82-23.505 14.972 36.429 15.028 19.299 45h-464.441l37.21-86.82c4.72-11.03 15.57-18.18 27.57-18.18h334.88c12 0 22.84 7.15 27.57 18.18z"
+                      fill="#a4a6aa" />
+                    <path d="m445.141 403.5-12.923-30-367.436.001-12.857 29.999z" fill="#414851" />
+                    <path
+                      d="m258.57 48.5h-20.14c-8.936 0-16.18 7.244-16.18 16.18 0 2.512.585 4.99 1.708 7.236l9.542 19.084h30l9.542-19.083c1.123-2.247 1.708-4.724 1.708-7.236 0-8.937-7.244-16.181-16.18-16.181z"
+                      fill="#fe7665" />
+                    <path d="m233.5 91v39.194h30v-39.194c0-8.284-6.716-15-15-15s-15 6.716-15 15z" fill="#ff4547" />
+                    <circle cx="248.5" cy="181" fill="#ff4547" r="67.5" />
+                    <path d="m248.5 143.5v75c20.711 0 37.5-16.789 37.5-37.5s-16.789-37.5-37.5-37.5z" fill="#ffa785" />
+                    <path
+                      d="m256 181c0-20.711-3.358-37.5-7.5-37.5-20.711 0-37.5 16.789-37.5 37.5s16.789 37.5 37.5 37.5c4.142 0 7.5-16.789 7.5-37.5z"
+                      fill="#ffbea4" />
+                    <path
+                      d="m138.786 106.029-10.07 17.441c-4.468 7.739-1.817 17.635 5.922 22.103 2.176 1.256 4.613 1.988 7.121 2.139l21.298 1.278 15-25.981-11.756-17.805c-1.384-2.096-3.237-3.841-5.413-5.097-7.738-4.468-17.633-1.816-22.102 5.922z"
+                      fill="#fe7665" />
+                    <path
+                      d="m163.058 148.99 33.942 19.597 15-25.981-33.943-19.597c-7.174-4.142-16.348-1.684-20.49 5.491s-1.684 16.348 5.491 20.49z"
+                      fill="#ff4547" />
+                    <path
+                      d="m128.717 238.529 10.07 17.441c4.468 7.739 14.364 10.39 22.103 5.922 2.176-1.256 4.029-3.001 5.413-5.098l11.756-17.805-15-25.981-21.297 1.278c-2.507.151-4.945.883-7.121 2.139-7.741 4.47-10.392 14.366-5.924 22.104z"
+                      fill="#fe7665" />
+                    <path
+                      d="m178.058 238.99 33.942-19.596-15-25.981-33.943 19.597c-7.174 4.142-9.633 13.316-5.49 20.491 4.143 7.173 13.316 9.631 20.491 5.489z"
+                      fill="#ff4547" />
+                    <path
+                      d="m238.43 313.5h20.139c8.936 0 16.18-7.244 16.18-16.18 0-2.512-.585-4.99-1.708-7.236l-9.541-19.084h-30l-9.542 19.083c-1.123 2.247-1.708 4.724-1.708 7.236 0 8.937 7.244 16.181 16.18 16.181z"
+                      fill="#fe7665" />
+                    <path d="m263.5 271v-39.194h-30v39.194c0 8.284 6.716 15 15 15s15-6.716 15-15z" fill="#ff4547" />
+                    <path
+                      d="m358.214 255.971 10.07-17.441c4.468-7.739 1.817-17.635-5.922-22.103-2.176-1.256-4.613-1.988-7.121-2.139l-21.298-1.278-15 25.981 11.756 17.805c1.384 2.096 3.237 3.841 5.413 5.097 7.738 4.468 17.634 1.816 22.102-5.922z"
+                      fill="#fe7665" />
+                    <path
+                      d="m333.942 213.01-33.942-19.597-15 25.981 33.943 19.597c7.174 4.142 16.348 1.684 20.49-5.491s1.684-16.348-5.491-20.49z"
+                      fill="#ff4547" />
+                    <path
+                      d="m368.283 123.471-10.07-17.441c-4.468-7.739-14.364-10.39-22.103-5.922-2.176 1.256-4.029 3.001-5.413 5.098l-11.756 17.805 15 25.981 21.297-1.278c2.507-.151 4.945-.883 7.121-2.139 7.741-4.47 10.392-14.366 5.924-22.104z"
+                      fill="#fe7665" />
+                    <path
+                      d="m318.942 123.01-33.942 19.596 15 25.981 33.943-19.597c7.174-4.142 9.633-13.316 5.49-20.491-4.143-7.173-13.316-9.631-20.491-5.489z"
+                      fill="#ff4547" />
+                  </g>
+                </svg>
+              </div>
+              <h5 class="card-title mt-4">Self-Check</h5>
+              <p class="card-text">Find out your status with our self-check</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Preventive mesasures</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="prevention">
+            <h5 class="mt-2">Stay Home as much as you can.</h5>
+          </div>
+          <div class="prevention">
+            <h5 class="mt-2">Keep a safe distance</h5>
+          </div>
+          <div class="prevention">
+            <h5 class="mt-2">Wash hands often</h5>
+          </div>
+          <div class="prevention">
+            <h5 class="mt-2">Cover your cough</h5>
+          </div>
+          <div class="prevention">
+            <h5 class="mt-2">Sick? Call ahead</h5>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="SymptomsModal" tabindex="-1" role="dialog" aria-labelledby="SymptomsModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Possible Symptoms of Covid-19</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and
+            pains, nasal congestion, runny nose, sore throat or diarrhea.
+            These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any
+            symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special
+            treatment.
+          </p>
+          <p> Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing.
+            Older people, and those with underlying medical problems like high blood pressure, heart problems or
+            diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing
+            should seek medical attention.
+          </p>
+          <ul class="symptoms">
+            <li>Cough</li>
+            <li>Fever</li>
+            <li>Tiredness</li>
+            <li>Difficulty breathing(for severre cases)</li>
+          </ul>
+          <span>
+            For informational purposes only. Consult your local medical authority for advice.
+            Source: <a href="https://who.int">World Health Organization</a>
+          </span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="./main.js"></script>
+
 </body>
+
 </html>
