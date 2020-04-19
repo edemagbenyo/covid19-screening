@@ -25,9 +25,9 @@ const api = (function api(){
   async function historical(all=true,country=null){
     try {
       if(all){
-        return await track.histroical(true)
+        return await track.historical(true)
       }else if(country){
-        return await track.histroical(null,country)
+        return await track.historical(null,country)
       }
     } catch (error) {
       console.log(`An error occured ${error}`);

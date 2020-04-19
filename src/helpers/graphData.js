@@ -22,6 +22,7 @@ export function getGraphData(rawData) {
     datasets: []
   };
 
+  console.log(rawData);
   //set labels for the data
   const thelabels = Object.keys(rawData.cases);
   cookedData.labels = [...thelabels];
