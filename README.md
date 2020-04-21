@@ -60,6 +60,11 @@ Thanks to the following people who have contributed to this project:
 
 If you want to contact me you can reach me at <https://twitter.com/edemAgbenyo>.
 
+## Known issues or improvement
+1. Automatically detect the country of visitor and show cases information
+2. Mark countries as a favourite, and show those countries data on top of the table on subsequent visits.
+3. Show daily addition of cases to inform the visitor of daily cases.
+
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
