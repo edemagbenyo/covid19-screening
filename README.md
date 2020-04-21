@@ -52,7 +52,11 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 Thanks to the following people who have contributed to this project:
 
-* [@edemagbenyo](https://github.com/edemagbenyo) 📖
+### Edem Agbeyo
+* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
+* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
+
+### Colling Ugwu
 * [@collinsugwu](https://github.com/collinsugwu) 📖
 
 
