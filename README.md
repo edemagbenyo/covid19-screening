@@ -6,9 +6,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/edemagbenyo/covid19-screening?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/covid19-screening?style=social)
 ![screen](https://github.com/edemagbenyo/covid19-screening/blob/develop/src/images/Screenshot%202020-04-16%20at%2011.56.59%20AM.png)
-Covid19-screening is simple application for tracking the novel corona virus pandemy cases. 
-It is no longer a news that we have been hit by a dangerous flu-like disease. This platform provides
-an up-to-date information on the cases count per country, a global case data and some preventive measures.
+Covid19-screening is a simple application for tracking the novel coronavirus pandemic cases. It is no longer a piece of news that we have been hit by a dangerous flu-like disease. This platform provides up-to-date information on the cases count per country, global case data and some preventive measures.
 
 ## Live
 Covid19-screening is live [here](https://covid19out-92937.firebaseapp.com/)
