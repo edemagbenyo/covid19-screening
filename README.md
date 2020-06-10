@@ -6,7 +6,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/edemagbenyo/covid19-screening?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/covid19-screening?style=social)
 ![screen](https://github.com/edemagbenyo/covid19-screening/blob/develop/src/images/Screenshot%202020-04-16%20at%2011.56.59%20AM.png)
-Covid19-screening is a simple application for tracking the novel coronavirus pandemic cases. It is no longer a piece of news that we have been hit by a dangerous flu-like disease. This platform provides up-to-date information on the cases count per country, global case data and some preventive measures.
+Covid19-screening is a simple application for tracking the novel coronavirus pandemic cases. It is no longer a piece of news that we have been hit by a dangerous flu-like disease. This platform provides up-to-date information on the cases count per country, global case data and, some preventive measures.
 
 ## Live
 Covid19-screening is live [here](https://covid19out-92937.firebaseapp.com/)
@@ -15,7 +15,7 @@ Covid19-screening is live [here](https://covid19out-92937.firebaseapp.com/)
 
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `nodejs`
+* You have installed the latest version of `Node.js`
 * You have a `<Windows/Linux/Mac>` machine.
 
 ## Installing covid19-screening
@@ -63,8 +63,8 @@ Thanks to the following people who have contributed to this project:
 If you want to contact me you can reach me at <https://twitter.com/edemAgbenyo>.
 
 ## Known issues or improvement
-1. Automatically detect the country of visitor and show cases information
-2. Mark countries as a favourite, and show those countries data on top of the table on subsequent visits.
+1. Automatically detect the country of visitor and showcases information
+2. Mark countries as a favorite, and show those countries data on top of the table on subsequent visits.
 3. Show daily addition of cases to inform the visitor of daily cases.
 
 ## License
