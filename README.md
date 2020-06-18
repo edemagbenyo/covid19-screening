@@ -5,11 +5,16 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/edemagbenyo/covid19-screening)
 ![GitHub stars](https://img.shields.io/github/stars/edemagbenyo/covid19-screening?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/covid19-screening?style=social)
-![screen](https://github.com/edemagbenyo/covid19-screening/blob/develop/src/images/Screenshot%202020-04-16%20at%2011.56.59%20AM.png)
-Covid19-screening is a simple application for tracking the novel coronavirus pandemic cases. It is no longer a piece of news that we have been hit by a dangerous flu-like disease. This platform provides up-to-date information on the cases count per country, global case data and, some preventive measures.
 
-## Live
-Covid19-screening is live [here](https://covid19out-92937.firebaseapp.com/)
+This project is a front end application that interacts with the API to fetch Covid-19 real time information. The information pulled from the API has been sanitized and presented in a table and graphical format. This project is build using vanilla javascript and a bit or react.
+
+Live version is available [here](https://covid19out-92937.firebaseapp.com/)
+
+To report a bug or request a feature use this [link](https://github.com/edemagbenyo/covid19-screening/issues)
+
+![screen](https://github.com/edemagbenyo/covid19-screening/blob/develop/src/images/Screenshot%202020-04-16%20at%2011.56.59%20AM.png)
+
+
 
 ## Prerequisites
 
@@ -18,20 +23,40 @@ Before you begin, ensure you have met the following requirements:
 * You have installed the latest version of `Node.js`
 * You have a `<Windows/Linux/Mac>` machine.
 
+
+## About the project
+
+Covid19-screening is a simple application for tracking the novel coronavirus pandemic cases.  This platform provides up-to-date information on the cases count per country, global case data and, some preventive measures. The information is presented in a table and graphical format to enable easy interpretation of the data.
+
 ## Installing covid19-screening
 
 To install covid19-screening app, follow these steps:
 
 1. Clone the project
-```
+```bash
 git clone git@github.com:edemagbenyo/covid19-screening.git
+
+cd covid19-screening
+
+npm install
+
+npm run start
 ```
+
+### Available scripts
+
+```
+npm run build
+```
+Builds the app for production to the build folder.
+
 ## Using covid19-screening app
 
 To use covid19-screening app, follow these steps:
 
 1. The home page provides you with global information on the cases in a graphical form
-2. Hit the search button
+2. Clicking on the "countries" card will take you to the countries cases pages
+3. Clicking a specific country will open a modal displaying detail information with data on that country.
 
 
 ## Contributing to covid19-screening app
