@@ -54,7 +54,7 @@ Builds the app for production to the build folder.
 To use covid19-screening app, follow these steps:
 
 1. The home page provides you with global information on the cases in a graphical form
-2. Clicking on the "countries" card will take you to the countries cases pages
+2. Clicking on the "countries" card will take you to the country's cases pages
 3. Clicking a specific country will open a modal displaying detail information with data on that country.
 
 
