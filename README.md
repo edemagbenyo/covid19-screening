@@ -6,7 +6,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/edemagbenyo/covid19-screening?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/covid19-screening?style=social)
 
-This project is a front end application that interacts with the API to fetch COVID-19 real time information. The information pulled from the API has been sanitized and presented in a tabular and graphical format. This project is build using vanilla JavaScript and a bit or React.
+This project is a front end application that interacts with the API to fetch COVID-19 real time information. The information pulled from the API has been sanitized and presented in a tabular and graphical format. This project is built using vanilla JavaScript and a bit of React.
 
 Live version is available [here](https://covid19out-92937.firebaseapp.com/)
 
