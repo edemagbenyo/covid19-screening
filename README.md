@@ -6,7 +6,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/edemagbenyo/covid19-screening?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/covid19-screening?style=social)
 
-This project is a front end application that interacts with the API to fetch Covid-19 real time information. The information pulled from the API has been sanitized and presented in a table and graphical format. This project is build using vanilla javascript and a bit or react.
+This project is a front end application that interacts with the API to fetch COVID-19 real time information. The information pulled from the API has been sanitized and presented in a tabular and graphical format. This project is build using vanilla JavaScript and a bit or React.
 
 Live version is available [here](https://covid19out-92937.firebaseapp.com/)
 
@@ -21,12 +21,11 @@ To report a bug or request a feature use this [link](https://github.com/edemagbe
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed the latest version of `Node.js`
-* You have a `<Windows/Linux/Mac>` machine.
 
 
 ## About the project
 
-Covid19-screening is a simple application for tracking the novel coronavirus pandemic cases.  This platform provides up-to-date information on the cases count per country, global case data and, some preventive measures. The information is presented in a table and graphical format to enable easy interpretation of the data.
+Covid19-screening is a simple application for tracking the novel coronavirus pandemic cases.  This platform provides up-to-date information on the cases count per country, global cases data and, some preventive measures. The information is presented in a tabular and graphical format to enable easy interpretation of the data.
 
 ## Installing covid19-screening
 
@@ -45,7 +44,7 @@ npm run start
 
 ### Available scripts
 
-```
+```bash
 npm run build
 ```
 Builds the app for production to the build folder.
@@ -75,20 +74,18 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 Thanks to the following people who have contributed to this project:
 
-### Edem Agbeyo
-* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
-* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
-
-### Colling Ugwu
-* [@collinsugwu](https://github.com/collinsugwu) 📖
+### [@edemagbenyo](https://github.com/edemagbenyo)
+### [@collinsugwu](https://github.com/collinsugwu)
 
 
 ## Contact
+* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
+* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
+* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
-If you want to contact me you can reach me at <https://twitter.com/edemAgbenyo>.
 
 ## Known issues or improvement
-1. Automatically detect the country of visitor and showcases information
+1. Automatically detect the country of a visitor and show cases information.
 2. Mark countries as a favorite, and show those countries data on top of the table on subsequent visits.
 3. Show daily addition of cases to inform the visitor of daily cases.
 
@@ -99,4 +96,4 @@ This project uses the following license: [MIT](<link>).
 
 
 Source:
-The dashboard is using (COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE)[https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series] as a data source
+The dashboard is using (COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE)[https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series] as its data source.
