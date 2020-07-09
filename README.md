@@ -71,11 +71,11 @@ To contribute to the covid19-screening app, follow these steps:
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 
-## Contact
-* LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/) 
-* Portfolio: [Edem Agbenyo](https://edemagbenyo.com) 
-* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
-
+## Author
+- Github: [@edemagbenyo](https://github.com/edemagbenyo)
+- Twitter: [Edem Agbenyo](https://twitter.com/edemAgbenyo)
+- LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/)
+- Email : [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
 ## Future features
 1. Automatically detect the country of a visitor and show cases information.
