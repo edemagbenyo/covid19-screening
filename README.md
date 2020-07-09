@@ -70,21 +70,14 @@ To contribute to the covid19-screening app, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-
-[@edemagbenyo](https://github.com/edemagbenyo)
-[@collinsugwu](https://github.com/collinsugwu)
-
 
 ## Contact
-* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
-* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
+* LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/) 
+* Portfolio: [Edem Agbenyo](https://edemagbenyo.com) 
 * Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
 
-## Known issues or improvement
+## Future features
 1. Automatically detect the country of a visitor and show cases information.
 2. Mark countries as a favorite, and show those countries data on top of the table on subsequent visits.
 3. Show daily addition of cases to inform the visitor of daily cases.
